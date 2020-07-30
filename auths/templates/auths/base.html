@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    {% comment %} <link rel="icon" type="image/png" href="registration/images/icons/favicon.ico"/> {% endcomment %}
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'registration/vendor/bootstrap/css/bootstrap.min.css' %}">
+    <!--===============================================================================================-->
+    {% comment %} <link rel="stylesheet" type="text/css"
+          href="{% static 'registration/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}"> {% endcomment %}
+    <!--===============================================================================================-->
+    {% comment %} <link rel="stylesheet" type="text/css"
+          href="{% static 'registration/fonts/Linearicons-Free-v1.0.0/icon-font.min.css' %}"> {% endcomment %}
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'registration/vendor/animate/animate.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'registration/vendor/css-hamburgers/hamburgers.min.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/animsition/css/animsition.min.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'registration/vendor/select2/select2.min.css' %}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css"
+          href="{% static 'registration/vendor/daterangepicker/daterangepicker.css' %}"> 
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'registration/css/util.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'registration/css/main.css' %}"> 
+
+<!--    Materialize-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--===============================================================================================-->
+
+    <!-- MDB icon -->
+    <link rel="icon" href="{% static 'material_design/img/mdb-favicon.ico' %}" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{% static 'material_design/css/bootstrap.min.css'%}">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="{% static 'material_design/css/mdb.min.css'%}">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="{% static 'material_design/css/style.css'%}">
+
+    <style>
+
+	    @font-face {
+        font-family: "segoeFont";
+        src: url("{% static 'registration/fonts/segoe-ui-light/segoeuil.ttf' %}");
+        }
+
+		body {
+		font-family: 'segoeFont','Arial'
+		}
+
+
+
+    </style>
+</head>
+<body>
+
+{%block content%}
+{% endblock %}
+<div id="dropDownSelect1"></div>
+
+<script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
+<script>
+    bootstrapValidate('#new_password1', 'min:8:####  Enter Atleast 8 characters ####')
+    bootstrapValidate('#new_password2', 'matches:#new_password1:####  Your passwords should match  ####')
+
+</script>
+
+<!--===============================================================================================-->
+{% comment %} <script src=" {% static 'registration/vendor/jquery/jquery-3.2.1.min.js' %} "></script> {% endcomment %}
+<!--===============================================================================================-->
+{% comment %} <script src=" {% static 'registration/vendor/animsition/js/animsition.min.js' %} "></script> {% endcomment %}
+<!--===============================================================================================-->
+{% comment %} <script src=" {% static 'registration/vendor/bootstrap/js/popper.js' %} "></script> {% endcomment %}
+{% comment %} <script src=" {% static 'registration/vendor/bootstrap/js/bootstrap.min.js' %} "></script> {% endcomment %}
+<!--===============================================================================================-->
+{% comment %} <script src=" {% static 'registration/vendor/select2/select2.min.js' %} "></script> {% endcomment %}
+<!--===============================================================================================-->
+{% comment %} <script src=" {% static 'registration/vendor/daterangepicker/moment.min.js' %} "></script> {% endcomment %}
+{% comment %} <script src=" {% static 'registration/vendor/daterangepicker/daterangepicker.js' %} "></script> {% endcomment %}
+<!--===============================================================================================-->
+{% comment %} <script src=" {% static 'registration/vendor/countdowntime/countdowntime.js' %} "></script> {% endcomment %}
+<!--===============================================================================================-->
+{% comment %} <script src=" {% static 'registration/js/main.js' %} "></script> {% endcomment %}
+
+ <!-- jQuery -->
+  <script type="text/javascript" src="{% static 'material_design/js/jquery.min.js'%}"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="{% static 'material_design/js/popper.min.js'%}"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="{% static 'material_design/js/bootstrap.min.js'%}"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="{% static 'material_design/js/mdb.min.js'%}"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+</body>
+</html>
